@@ -4,10 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./main.css">
   <title>Document</title>
 </head>
 <body>
-  Template
+  <div class="header">
+    <div class="container">
+      <div class="header__list">
+
+        <div class="picture">
+          <img src="./img/pokemon_logo 1.png" alt="">
+        </div>
+
+        <div class="search">
+          <form id="form">
+            <select class="article__title" name="" id="selectType">
+              <option class="entry" value="Grass">Grass</option>
+              <option class="entry" value="Poicon">Poicon</option>
+              <option class="entry" value="Fire">Fire</option>
+              <option class="entry" value="Water">Water</option>
+              <option class="entry" value="Bug">Bug</option>
+              <option class="entry" value="Normal">Normal</option>
+              <option class="entry" value="Ground">Ground</option>
+              <option class="entry" value="Poison">Poison</option>
+              <option class="entry" value="Fighting">Fighting</option>
+              <option class="entry" value="Psychic">Psychic</option>
+              <option class="entry" value="Rock">Rock</option>
+              <option class="entry" value="Electric">Electric</option>
+              <option class="entry" value="Ice">Ice</option>
+              <option class="entry" value="Ghost">Ghost</option>
+              <option class="entry" value="Flying">Flying</option>
+              <option class="entry" value="Dragon">Dragon</option>
+            </select>
+  
+             <input class="entry" type="text" id="search">
+             <select class="article__list" name="" id="letter">
+              <option class="listt_one" value="abc">Aa-Zz</option>
+              <option class="listt_one" value="cba">Zz-Aaa</option>
+             </select>
+             <button class="btn" type="submit">sumbit</button>
+          </form>
+        </div>
+
+        <div class="pokemons" id="pokemons"></div>
+
+        
+        
+        <template id="template">
+          <div class="poke-box">
+            <img id="pokeImg" src="http://www.serebii.net/pokemongo/pokemon/001.png">
+            <div class="titleBox">
+              <div class="nameBox">
+                <h3 id="pokeName">losdsd</h3>
+                <p id="type">dddsds</p>
+              </div>
+              <img width="27" src="./img/heart-regular.svg" >
+            </div>
+            <div class="lost">
+              <p id="lost"></p>
+              <p id="height"></p>
+            </div>
+          </div>
+
+        </template>
+      </div>
+    </div>
+  </div>
+  <script src="./pokemons.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
